@@ -1,0 +1,20 @@
+</body>
+<script>
+    const header = document.getElementById("header");
+    const toggler = document.getElementById("hamburger-button");
+    const nav = document.querySelector("nav");
+
+    toggler.addEventListener("click", function () {
+        if (header.style.height === "80px") {
+            nav.style.display = "block";
+            header.style.height = "180px";
+        }
+        else {
+            header.style.height = "80px";
+            nav.style.display = "none";
+        }
+    });
+
+</script>
+
+</html>

@@ -1,0 +1,316 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html,body{
+    height: 100%;
+    text-align: center;
+    font-size: 100%;
+}
+/* navbar section */
+.container{
+    width: 80%;
+    margin: 0% auto;
+}
+header{
+    padding: 1.5em 0 1.5em 0;
+    transition: 0.5s;
+}
+.hamburger{
+    display: none;
+}
+nav,
+nav ul{
+    display: flex;
+}
+nav{
+    justify-content: space-between;
+}
+nav ul{
+    justify-content: flex-end;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    padding: 1em 2.4em;
+    color: #fff;
+    font-size: 0.88em;
+    font-weight: 600;
+}
+a:hover{
+    background: rgb(33, 106, 241);
+    color: #111;
+}
+/* typograaphy */
+h1,h3,h2{
+    color: #fff;
+}
+h1{
+    font-size: 6.5em;
+    font-weight: bolder;
+    line-height: 1.1em;
+    letter-spacing: 2px;
+}
+h1,
+.about-subtitle{
+    font-family: 'DM Sans', sans-serif;
+}
+h3{
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    margin-top: 1em;
+    margin-bottom: 2.3em;
+}
+a,h3{
+    text-transform: uppercase;
+}
+p{
+    color: rgb(112, 111, 111);
+    line-height: 1.3em;
+    letter-spacing: 0.7px;
+}
+.about-subtitle{
+    color: #111;
+    font-size: 5em;
+    font-weight: 800;
+    line-height: 1em;
+    letter-spacing: 1px;
+}
+.about-info{
+    margin-top: 1.5em;
+    margin-right: 6em;
+}
+/* home section */
+.home{
+    height: 100%;
+    background: url("../images/abc.jfif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.home-container{
+    text-align: left;
+    padding: 10em 0 3em 0;
+}
+.home-link1,
+.home-link2{
+    color: #111;
+}
+.home-link1{
+    background: #fff;
+}
+.home-link1:hover{
+    background: #fff;
+}
+.home-link2{
+    margin-left: 2em;
+    background: rgb(241, 241, 33);
+}
+
+/* about section */
+.about-container{
+    width: 100%;
+    background: linear-gradient( rgba(2, 2, 2, 0.678) , rgba(2, 2, 2, 0.692) ),url("../images/childern.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.about-title{
+    padding: 0.6em;
+}
+.about-container2{
+    display: flex;
+    text-align: left;
+    padding: 6em 0;
+    justify-content: space-between;
+}
+.about-subtitle span,
+.contact-subtitle span{
+   color:  rgb(241, 241, 33);
+}
+.about-container2 > * {
+    flex-basis: 100%;
+}
+.about-image img{
+    width: 100%;
+}
+
+
+/* contact section */
+.contact-subtitle {
+    font-size: 2.3em;
+    color: #111;
+}
+.name,
+.email{
+    width: 38%;
+}
+.name,
+.email,
+.subject,
+.message{
+    font-size: 1em;
+}
+.name,
+.email,
+.subject,
+.message{
+    padding: 1.3em;
+    border-radius: 0.3em;
+    border-color: rgb(204, 197, 197);
+    margin-top: 2em;
+}
+.email{
+    margin-left: 2em;
+} 
+.subject,
+.message{
+    width: 82%;
+}
+.message{
+    padding: 1.3em 1.3em 3em 1.3em;
+}
+.contact-link{
+    display: inline-block;
+    margin-top: 2em;
+    margin-left: 0%;
+}
+.contact-title{
+    padding-right: 7em;
+    padding-left: 4em;
+}
+.contact-info{
+    display: flex;
+    padding: 0.8em 1em -1em 1em;
+}
+.top{
+    margin-top: 1.8em;
+}
+.fas{
+    margin-top: 1.5em;
+    color:  rgb(241, 241, 33);
+}
+.contact-detail{
+    padding: 1em;
+    margin-left: 0.5em;
+}
+
+/* donate section */
+.donate{
+    height: 100%;
+    background-image: linear-gradient( rgba(2, 2, 2, 0.527) , rgba(2, 2, 2, 0.486) ), url("../images/girl.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.donate-container{
+    padding: 14em 0 3em 0;
+}
+.donate-title{
+    color: #fff;
+}
+.donate-title span{
+    color:  rgb(241, 241, 33);
+}
+#buy-now-btn{
+    margin-top: 2em;
+    text-decoration: none;
+    padding: 1.2em 2.5em;
+    color: #111;
+    font-size: 0.88em;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 44em){
+    html{
+        font-size: 65%;
+        flex-direction: row;
+    }
+    header{
+        height: 80px;
+    }
+    header, .hamburger{
+        background: rgb(241, 241, 33);
+    }
+    .nav-container{
+        justify-content: space-between;
+    }
+    .nav-container, .hamburger{
+        display: flex;
+    }
+    nav,nav ul{
+        flex-direction: column;
+    }
+    nav{
+        display: none;
+    }
+    nav li{
+        padding-top: 1.5em;
+    }
+    nav a, .nav-logo, .hamburger-button{
+        color: #111;
+    }
+    nav a:hover{
+        background: #fff;
+    }
+    .hamburger{
+        z-index: 10;
+        width: 46px;
+        height: 36px;
+        border-radius: 2px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .hamburger-button{
+        font-size: 2.7em;
+        margin: 0%;
+    }
+    .home-container,
+    .donate-container{
+        margin-top: 9em;
+    }
+    .about-container2{
+        flex-direction: column;
+        text-align: justify;
+    }
+    .about-subtitle{
+        text-align: center;
+    }
+    .about-info{
+        margin-right: 0%;
+    }
+    .about-image{
+        padding-top: 3em;
+    }
+    .contact-form{
+        padding-right: 7em;
+        padding-left: 4em;
+    }
+    .name,
+    .email,
+    .subject,
+    .message{
+        width: 100%;
+    }
+    .email{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 24em){
+    html{
+        font-size: 52%;
+    }
+}
+
+@media screen and (max-width: 18em){
+    html{
+        font-size: 42%;
+    }
+    .hamburger-button{
+        font-size: 4.7em;
+    }
+}
